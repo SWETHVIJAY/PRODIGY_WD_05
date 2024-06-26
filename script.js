@@ -74,7 +74,7 @@ function displayWeather(data) {
 function displayHourlyForecast(hourlyData) {
     const hourlyForecastDiv = document.getElementById('hourly-forecast');
 
-    const next24Hours = hourlyData.slice(0, 8); 
+    const next24Hours = hourlyData.slice(0, 3); 
 
     next24Hours.forEach(item => {
         const dateTime = new Date(item.dt * 1000); 
